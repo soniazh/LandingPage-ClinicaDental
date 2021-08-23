@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>DNT | Clínica Dental Navarra</title>
+</head>
+
+<body>
+  <header class="home">
+    <div id="navbar" class="navbar top">
+      <a class="logo" href="#">
+        <h1 class="color-primary">DNT</h1>
+        <h2>Clinica Dental Navarra</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#trat">Tratamientos </a></li>
+          <li><a href="#quienes">Quienes Somos</a></li>
+          <li><a href="#inst">Instalaciones</a></li>
+          <li><a href="#test">Testimonios</a></li>
+          <li><a href="#cita">Pedir Cita</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="bienvenida">
+      <div class="bien2">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime hic labore voluptas commodi magnam illum!</p>
+        <a href="#cita" class="btn">Pedir cita</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="trat">
+      <div class="container flex">
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_blanqueo.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Blanqueo Dental</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_braces.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Ortodoncia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_implant.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Implantes dentales</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+
+
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_limp.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Limpieza Dental</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_infant.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Ortodoncia Infantil</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+
+
+        <div class="card outline">
+          <div class="imagen">
+            <img src="./img/tratamientos/trat_endo.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="color-primary">Endodoncia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat numquam ex fugit temporibus,
+              voluptatibus dolorem maxime debitis, id explicabo deserunt obcaecati, eveniet laudantium quisquam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    dnmosdmlasdla
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 140) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-83px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+    // Smooth Scrolling
+    $('.logo, #navbar a, .btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 100,
+          },
+          800
+        );
+      }
+    });
+
+  </script>
+
+
+</body>
+
+</html>
