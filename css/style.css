@@ -12,18 +12,25 @@
 }
 
 .container {
-  width: 92%;
+  width: 90%;
   margin: 50px auto;
+}
+
+.container2{
+  width: 96%;
+  margin: 50px auto;
+  height: 600px;
 }
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .card {
-  width: 28%;
+  width: 25.5%;
   text-align: center;
   margin-bottom: 5%;
   border-radius: 0 0 20px 0 ;
@@ -31,8 +38,9 @@
 }
 
 .card .imagen {
-  height: 260px;
+  height: 200px;
 }
+
 
 .card .imagen img {
   height: 100%;
@@ -52,6 +60,7 @@
 .card-body h1 {
   margin-bottom: 5px;
 }
+
 
 /* Main */
 * {
@@ -81,6 +90,11 @@ ul {
   list-style: none;
 }
 
+p{
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
 /* Logo */
 .logo h1{
   font-size: 47px;
@@ -96,7 +110,7 @@ ul {
 /* Navbar */
 .navbar {
   display: flex;
-  background: rgb(248,246,207);;
+  background: rgb(248,246,207);
   align-items: center;
   justify-content: space-between;
   height: 83px;
@@ -177,6 +191,7 @@ ul {
 .home .navbar {
   z-index: 11;
 }
+
 /* Contenido bienvenida */
 .home .bienvenida {
   display: flex;
@@ -192,6 +207,7 @@ ul {
   padding-top: 5%;
   width: 44%;
 }
+
 .home .bienvenida h1{
   font-family: 'Assistant', sans-serif;
   font-size: 72px;
@@ -199,7 +215,7 @@ ul {
   padding-bottom: 12px;
 }
 
-.home .bienvenida h1::after{
+#test h2::after , .home .bienvenida h1::after{
   position: absolute;
   content: '';
   left: 5%;
@@ -234,13 +250,278 @@ ul {
   padding: 13px 38px 16px 30px;
 }
 
+input.btn {
+  display: block;
+  position: absolute;
+  font-size: 24px ;
+  font-weight: 700;
+  margin: 20px;
+  padding: 17px;
+  width: 165px;
+  right: -10px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .btn:hover {
   box-shadow: 3px 3px 4px #46464675 ;
   background-color: #7BBB6B;
 }
 
+#quienes {
+  border-radius: 45% 0 0 0 ;
+  background: rgb(123,187,107);
+  background: linear-gradient(100deg, rgba(123,187,107,0.3) 16%, rgba(255,255,255,0.3) 100%);
+}
+
+.dos-lados img {
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 45% 0;
+}
+
+#cita .dos-lados img {
+  border-radius: 0;
+}
+
+.dos-lados .contenido2, .formulario {
+  width: 50%;
+}
+
+.contenido2, .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:stretch;
+  padding: 30px 50px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.contenido2 h1{
+  font-family: unset;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contenido2 h2{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+
+/* Instalaciones */
+#inst {
+  margin-top: 100px;
+}
+
+#test h2, #inst h2{
+  font-size: 36px;
+  text-align: center;
+  margin: 27px;
+}
+
+#inst .card {
+  width: 30%;
+}
+
+.card .imagen.img-2 {
+  height: 400px;
+}
+
+#inst p {
+  padding: 17px 35px ;
+  font-weight: 300;
+}
+
+/* Chat */
+.chat.flex {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.chat.flex.reverse {
+  flex-direction: row-reverse;
+}
+
+.chat .img{
+  width: 20%;
+  height: 410px;
+  border-radius: 37%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 0px rgba(98,166,81,0.6);
+}
+
+.img img {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  bottom: -4%;
+  object-fit: cover;
+}
+
+.chat .chat-contenido {
+  margin-left: -100px;
+  width: 59%;
+  text-align:start;
+}
+
+.chat.flex.reverse .chat-contenido {
+  text-align: end;
+}
+
+.chat.flex.reverse .chat-contenido{
+  margin-right: -90px;
+}
+
+.chat .chat-contenido h3 {
+  margin-left: 150px;
+  padding-bottom: 10px;
+  font-size: 35px ;
+  font-weight: 400;
+}
+
+.chat.flex.reverse .chat-contenido h3 {
+  margin-right: 150px;
+}
+
+#test h2{
+  position: relative;
+  padding-bottom: 13px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 7%; }
+
+.chat  p {
+  font-size: 19px;
+  padding: 35px 47px 35px 120px;
+  border-radius: 20%;
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.25);
+}
+
+.chat.flex.reverse p {
+  padding: 35px 120px 35px 47px;
+}
+
+/* Formulario */
+#cita {
+  margin: 170px 0 100px 0;
+}
+
+.formulario h2 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.formulario header {
+  margin-bottom: 13px;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #62A651;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 23px;
+  height: 40px;
+  border-radius: 10px;
+  border: #4B4B4B 1px solid;
+}
+
+input:focus {
+  outline-color: #7BBB6B;
+}
+
+input[type="text"], input[type=email]
+{
+    font-size:16px;
+    font-weight: 300;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #62A651;
+  padding: 20px 0 50px 0;
+}
+
+.footer .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1%;
+}
+
+.footer a {
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.footer a:hover{
+  text-shadow: #CDCDCD 4px 4px 3px;
+}
+
+.footer h3 {
+  color: #fff;
+  font-family: unset;
+  margin-bottom: 13px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+
 /* Media queries */
 @media(max-width: 425px) {
+
+  #quienes img {
+    width: 83%;
+    object-fit: cover;
+    border-radius: 45% 0;
+  }
+  
+  #quienes div {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 53px;
+  }
+
   .home {
     height: 80vh;
     background-position: 10% 0%;
@@ -290,12 +571,12 @@ ul {
     font-size: 15px;
   }
   
-.home .bien2{
-  margin-top: 53vh;
-  margin-right: 10px;
-  padding: 10px;
-  width: 90%;
-}
+  .home .bien2{
+    margin-top: 53vh;
+    margin-right: 10px;
+    padding: 10px;
+    width: 90%;
+  }
 
   .home .bienvenida h1{
     font-size: 30px;
@@ -316,31 +597,68 @@ ul {
     padding: 10px 22px;
   }
 
+  
+  #inst .card {
+    width: 89%;
+  }
+
+  .card .imagen.img-2 {
+    height: 230px;
+  }
+
+  .chat .img{
+    width: 80%;
+  }
+
+  .chat .chat-contenido {
+    width: 97%;
+    margin:0 ;
+  }
+
+  
+  .chat .chat-contenido  h3{
+    padding-top: 13px;
+    text-align: center;
+    margin:0 ;
+  }
+
+  .chat .chat-contenido p{
+    padding: 30px;
+  }
+
+  .chat.flex.reverse p {
+    padding: 30px;
+  }
+
+  .chat.flex.reverse .chat-contenido h3 {
+    margin-right: 0;
+  }
+
+  .chat.flex.reverse .chat-contenido{
+    margin-right: 0px;
+  }
+
+  .dos-lados img {
+    width: 100%;
+  }
+  
+  .dos-lados .contenido2, .formulario {
+    width: 100%;
+  }
+
+  .footer .card {
+    margin-bottom: 10%;
+  }
+
+
 }
 
 @media(min-width: 426px) and (max-width: 1024px){
   .navbar {
     height: unset;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar ul{
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 19px;
-  }
-  
-  .navbar li::before{
-    top: 57%;
-  }
-}
-
-/* 
-@media(max-height: 798px) {
-  .navbar {
-    height: 70px;
+    justify-content:space-around;
+    padding-left: 30px;
   }
 
   .logo h1{
@@ -349,14 +667,62 @@ ul {
 
   .navbar li {
     width: 136px;
-    padding: 19.5px 0px 0px 21px;
+    padding: 19.5px 0px 18px 21px;
   }
 
   .navbar a{
     font-size: 16.4px;
   }
 
-} */
+  .navbar ul{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+
+  .navbar li::before{
+    top: 57%;
+  }
+
+  .home .bien2{
+    margin-right: 0%;
+    margin-bottom: 5% ;
+    padding-top: 14%;
+    width: 46%;
+  }
+
+  .home .bienvenida h1{
+    font-size: 50px;
+  }
+
+  .bienvenida p {
+    font-size: 18px;
+  }
+
+  .btn{
+    font-size: 19px;
+    padding: 10px 32px 10px 29px;
+  }
+
+  .card {
+    width: 40%;
+    margin-bottom: 53px;
+  }
+
+  .chat .img{
+    width: 26%;
+  }
+
+  .chat .chat-contenido {
+    width: 74%;
+  }
+
+  .chat .img{
+    height: 360px;
+  }
+}
+
 
 /* PC */
 @media(min-width: 1441px) {
@@ -364,7 +730,19 @@ ul {
     width: 32%;
     margin-right: 12%;
     padding-top: 0;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
+  }
+
+  .card .imagen {
+    height: 260px;
+  }
+
+  .container{
+    width: 82%;
+  }
+
+  .chat .img{
+    width: 26%;
   }
 
 }
